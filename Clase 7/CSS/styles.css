@@ -1,0 +1,50 @@
+section div{
+    border: 5px solid #000;
+    height: 100px;
+    width:  100px;
+    display: inline-block;
+    /*box-sizing: content-box*/;/*me va tomas todo content-border-padding*/
+    box-sizing: border-box;/*el tamaño la caja es con el limite del borde, no suma padding y border, se van a achicar los elementos en esa caja*/
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+/*body > section{}*/
+
+body{
+    /*width: 1000px;*/
+    margin: 0px auto;
+} 
+
+
+
+section.flexible{
+    height: auto/* 400px*/;
+background-color: rgba(255, 255, 255, .9) /* #7ceb72*/;
+    /*flex si invoca en el contendor de elementos y va a aplicarse a sus hijos directos*/
+    /*viene por defecto row y nowrpas*/
+    display: flex;/*dibuja a los elemntos sin espacios a diferencia de display: inline -block*/
+    flex-direction: row; /*column - reverse(al revez)*/
+    /*flex-wrap: wrap*/;/*pone un enter cuando llega al tope*/
+    flex-wrap: wrap;/*no hace un enter y va a ajustar */
+    justify-content: flex-start;/*alinea al comienzo. row izquierda, column arriba*/
+    justify-content: flex-end;/*alinea al final. row derecha, column abajo*/
+    justify-content: center;/*alinea en el centro*/
+    justify-content: space-between;/*deja el mismo espacio entre items hasta rellenar el contenedor*/
+    justify-content: space-around;/*deja el mismo espacio y tambien entre el objeto y el contenedor*/
+    justify-content: space-evenly;/*combia between y around*/
+    align-items:center;
+    /*column-gap: 80px;
+    row-gap: 200px;*/
+    gap: 200px 13px;/*column row*/
+}
+
+section>div.unico{
+    width: 100px;
+    height: 50px;
+    align-self: flex-end;
+    justify-self:auto;
+    
+    order: 1; /*lo lleva al final porque porque default=0*/
+}

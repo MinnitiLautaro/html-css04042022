@@ -1,0 +1,54 @@
+body {
+  background-color: #333;
+  color: #fff;
+  /*body div*/
+}
+
+body p {
+  /*en lugar de escribir otro selector con "body p"*/
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-width: 2px;
+}
+
+body p:hover {
+  /*genera un body p.parrafox:hover -- del & donde esta incluido, en este caso body p:hover*/
+  color: #ef6c6c;
+  border-color: #ef6c6c;
+}
+
+body > p {
+  /*en lugar de body>p*/
+  font-size: 1.5rem;
+}
+
+body h1 {
+  /*body h1*/
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px 5px #fff;
+  transition: .5s;
+}
+
+body h1:hover {
+  box-shadow: 0 0 20px 5px #fff;
+  transform: translate(2px, 2px);
+  cursor: pointer;
+}
+
+body div {
+  padding: 10px;
+  background-color: blueviolet;
+  margin-top: 1px;
+}
+
+body div.primer {
+  background-color: red;
+}
+
+body div p {
+  font-size: 1.5rem;
+  background-color: #333;
+}
+/*# sourceMappingURL=main.css.map */

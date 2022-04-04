@@ -1,0 +1,49 @@
+/*@mixin imagen ($numero){
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    background-image: url(../img/paisajes/0#{$numero}.jpg);
+    background-size: cover;
+    background-position: center;
+}*/
+
+
+
+@mixin effect-rotation {
+    transition: .5s;
+    &:hover {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+
+@mixin imagen ($numero)
+{
+    &:nth-child(#{$numero}){
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        background-image: url(../img/paisajes/0#{$numero}.jpg);
+        background-size: cover;
+        background-position: center;
+        @include effect-rotation();
+    }
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    /*div{
+        margin: 10px;
+            @include imagen(1);
+            @include imagen(2);
+            @include imagen(3);
+            @include imagen(4);
+            @include imagen(5);
+    }*/
+    div{
+        margin: 10px;
+        @for $numero from 1 to 5 {
+            @include imagen($numero);
+        }
+    }   
+}

@@ -1,0 +1,108 @@
+
+body{
+    width: 1000px;
+    margin: 0px auto;
+    background-color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255,255,255,.9);
+}
+/*
+section{
+    width: 1000px;
+    height: auto;
+    margin: 0px
+}
+*/
+img{
+    width: 180px;
+    margin: 0px;
+}
+
+ul{
+    text-align: center;
+}
+
+ul>li{
+    display: inline-block;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid rgb(83, 95, 255);
+    position: relative;
+    margin: 10px 15px;
+    padding: 10px;
+}
+
+header>ul{
+    border: 1px solid #fd0402;
+}
+
+h2{
+    text-align: center;
+}
+
+section>h2{
+    border-bottom: 2px solid rgba(255,255,255,.9);
+    padding-bottom: 5px;
+}
+
+/*img .absolute {
+    position: absolute;
+    left: 10px;
+}*/
+ 
+p{
+    margin: 0px;
+}
+
+
+header>ul>li{
+    display: inline-block;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(255, 83, 83);
+    position: relative;
+    margin: 0px 80px;
+    padding: 10px ;
+}
+
+h2{
+    margin-bottom: 0px;
+    position: relative;
+    top: 15px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#static{
+    background-color: rgb(190, 231, 5);
+    text-align: center;
+    margin: 0px;
+}
+#relative{
+    background-color: rgb(170, 76, 22);
+    text-align: center;
+    margin: 0px;
+}
+#absolute{
+    background-color: rgb(12, 133, 240);
+    text-align: center;
+    margin: 0px;
+}
+#sticky{
+    background-color: rgb(12, 223, 30);
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+#static img{
+    /*width: 300px;
+    height: 100px;*/
+    object-fit: contain;/*ajusta a lo mas chico para que no se distorsione*/
+    object-fit: cover;/*agranca al maximo y corta el resto*/
+    object-position: 50% 80%;/*top-bottom-left-right / xx% xx% ejes x e y / */
+    /*aspect-ratio: 16/9; configuracion sobre el width/16 (ancho) y ese resultado *9 (alto)*/
+}

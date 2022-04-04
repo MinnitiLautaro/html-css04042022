@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+}
+
+section.testimonios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img{
+    width: 50%;
+}
+
+.avatar>img{
+    width: 100px;
+}
+
+:root{
+    font-size: 16px;
+}
+
+p{
+    width:auto;
+}
+
+section>article a{
+
+}
+
+article{
+    display: flex;
+    border: 1px solid rgb(5,5,5);
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: 33%;
+    padding: 2rem;
+}
+
+.izquierda{
+    order: 0;
+}
+
+.centro{
+    order: 2;
+}
+
+.derecha{
+    order: 3;
+}
+
+.social>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 10px;
+    background-color: rgb(34, 39, 46);
+    border: 1px solid violet;
+    justify-items: center ;/*combia between y around*/
+    align-items:center;
+}
+
+article.lautaro-minniti .social ul>li{
+    border-radius: 30px;
+    
+    transition: transform 1s, font-size 4s, box-shadow .5s, widht .5s linear;
+    width: 130px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+/*
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  
+    object-fit: none;solo sirve para img y video
+    */  
+    overflow: hidden;
+    row-gap: 50px;
+    border: 1px solid violet;
+}
+
+
+
+article.lautaro-minniti .social ul>li>a{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    gap: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+article.lautaro-minniti .social ul>li>a img{
+    background-color: #0084b1;
+    fill: #0084b1;
+    border-radius: 50px;
+    width: 80px;
+    transition: transform 1s, font-size 4s, box-shadow .5s, widht .5s;
+   }
+
+article.lautaro-minniti .social ul>li.linkedin{
+    background-color: #0084b1;
+}
+
+article.lautaro-minniti .social ul>li.linkedin img{
+    position: relative;
+    top: -5px;
+}
+
+article.lautaro-minniti .social ul>li.instagram{
+    background-color: rgb(197, 54, 164);
+}
+
+article.lautaro-minniti .social ul>li.instagram img{
+    
+}
+
+article.lautaro-minniti .social ul>li.twitter{
+    background-color: rgb(80, 171, 241);
+}
+
+article.lautaro-minniti .social ul>li.twitter img{
+    background-color: aqua;
+}
+
+
+article.lautaro-minniti .social ul>li:hover{
+    box-shadow:  0 0 15px 2px rgb(0, 82, 112);
+    width: 200px;
+}
+
+article.lautaro-minniti .social ul>li:hover img{
+    transform: rotate(360deg) scale(1.1);
+    
+}
+
+
+article.lautaro-minniti .social ul>li>a img{
+ fill: #fff;
+ background-color: #fff;
+}
+
+
+/* ESCRIBIR TODO EL CSS QUE NECESITEN, SOLO MODIFICAR LO QUE SE PIDE NADA MAS */

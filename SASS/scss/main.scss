@@ -1,0 +1,66 @@
+$color_bg: #333;
+$color_text: #fff;
+
+@mixin altura {
+    box-shadow: 0 0 10px 5px #000;
+    transition: .5s;
+    &:hover {
+        box-shadow: 0 0 20px 5px #000;
+        transform: translate(2px,2px);
+        cursor: pointer;
+    }
+}
+
+@mixin altura ($color:#000) {
+    box-shadow: 0 0 10px 5px $color;
+    transition: .5s;
+    &:hover {
+        box-shadow: 0 0 20px 5px $color;
+        transform: translate(2px,2px);
+        cursor: pointer;
+    }
+}
+
+@mixin parrafoslindos {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-width: 2px;
+    
+    &:hover {/*genera un body p.parrafox:hover -- del & donde esta incluido, en este caso body p:hover*/
+        color: rgb(239,108,108);
+        border-color: rgb(239,108,108);
+    }
+}
+
+body{
+    background-color: $color_bg;
+    color: $color_text;
+    p{/*en lugar de escribir otro selector con "body p"*/
+        font-size: 1.5rem;
+        @include parrafoslindos;
+    }
+    >p{/*en lugar de body>p*/
+        font-size: 1.5rem;
+    }
+    h1{/*body h1*/
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        @include altura(#fff);
+    }/*body div*/
+    div{
+        padding: 10px;
+        background-color: blueviolet;
+
+        &.primer /*body div.primer*/
+        {
+            background-color: red;
+        }
+            margin-top: 1px;
+
+            p/*body div.primer p*/
+            {
+                font-size: 1.5rem;
+                background-color: #333;
+            }
+        }
+}

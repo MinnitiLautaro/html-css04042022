@@ -1,0 +1,103 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 1000px;
+    margin: 0 auto;/*arriba y abajo 0 - izquierda y derecha auto. Siempre centra*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(49, 49, 49);
+}
+
+header{
+    position: relative;
+}
+
+
+img
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    margin: 10px;
+    border: 5px solid black;        
+}
+
+/*
+static: ignora la posicion (left-top-rigth)
+relative: se mueve desde la posicion y mantiene el espacio ocupado inicialmente( la caja)
+absolute: se mueve desde la posicion (distinta de static) del primer ascendiente y no ocupa espacio*/
+#logo
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    border: 4px solid rgba(0, 148, 148, 0.8);
+    z-index: 1;
+}
+
+nav>ul>li
+{
+    display: inline;
+    margin: 0px 70px;
+}
+
+nav>ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+nav>ul>li>a
+{
+    
+}
+
+nav
+{
+    background-color: #F28907;
+    height: 150px;
+    position: relative;
+}
+
+section{
+    position: static;
+    padding: 20px;
+    margin: 20px;
+    background-color: #007071;
+    clear: both;
+}
+
+p{
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+#banana{
+    background-color: #F29F05;
+}
+
+#frutilla{
+    background-color: #BF0413;
+}
+
+#sandia{
+    background-color: #88A65B;
+}
+
+#pera{
+    background-color: #D3D932;
+}

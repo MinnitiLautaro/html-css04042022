@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body div {
+  margin: 10px;
+}
+
+body div:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  background-image: url(../img/paisajes/01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body div:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  background-image: url(../img/paisajes/02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body div:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  background-image: url(../img/paisajes/03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body div:nth-child(4) {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  background-image: url(../img/paisajes/04.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body div:nth-child(5) {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  background-image: url(../img/paisajes/05.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=galleria.css.map */

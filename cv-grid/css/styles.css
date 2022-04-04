@@ -1,0 +1,280 @@
+:root{
+    font-size: 16px;
+}
+
+html body main p article section li ul h1 h2 h3 h4 header div span{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body>main>*{
+    border: 1px solid rgb(126, 126, 126);
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b9b9b9;
+    width: 1000px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    }
+
+main{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    grid-template-areas:
+        "imagen imagen imagen             encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+        "imagen imagen imagen             encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+        "imagen imagen imagen             resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes"
+        "imagen imagen imagen             resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes resumen-aptitudes"
+        "imagen imagen imagen             laboral laboral laboral laboral laboral laboral laboral"
+        "fondo-azul fondo-azul fondo-azul laboral laboral laboral laboral laboral laboral laboral"
+        "fondo-azul fondo-azul fondo-azul laboral laboral laboral laboral laboral laboral laboral"
+        "fondo-azul fondo-azul fondo-azul academico academico academico academico academico academico academico"
+        "fondo-azul fondo-azul fondo-azul academico academico academico academico academico academico academico"
+        "fondo-azul fondo-azul fondo-azul academico academico academico academico academico academico academico";
+    
+    }
+
+h1{
+    font-size: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    border: 1px solid rgb(126, 126, 126);
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 1px solid rgb(126, 126, 126);
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    border-bottom: 0.2rem solid rgb(17, 9, 233);
+    position: relative;
+}
+
+h2 span{
+    margin: 0;
+    padding: 0;
+}
+
+
+.resumen-aptitudes{
+    grid-area: resumen-aptitudes;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "resumen-personal aptitudes"
+        "resumen-personal aptitudes";
+    column-gap: 10%;
+}
+
+.laboral{
+    grid-area: laboral;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 5% 35% 15% 35%;
+    grid-template-areas:
+        "tit-laboral"
+        "."
+        "experiencia1"
+        "."
+        "experiencia2";
+}
+
+
+ul{
+    list-style:disc;
+    padding: 0px;
+    margin: 0px;
+    row-gap: 2px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid rgb(250, 22, 22);
+}
+
+li{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgb(0, 0, 0); 
+
+}
+
+.tit-laboral{
+    grid-area: tit-laboral;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+
+.fondo-blanco{
+    background-color: #b9b9b9;
+    grid-area: fondo-blanco;
+}
+
+.fondo-azul{
+    background-color: rgba(59, 64, 229, 0.8);
+    grid-area: fondo-azul;
+    padding: 10%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fondo-azul h4{
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 5% 0 5% 0;
+}
+
+.resumen-aptitudes h3{
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto p{
+    margin: 0;
+    padding: 0;
+}
+
+.referencia h4{
+    margin-top: 5%;
+}
+
+.imagen{
+    grid-area: imagen;
+    background-color: aqua;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imagen img{
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    position: relative;
+    margin-right: 5%;
+}
+
+.resumen-personal{
+    grid-area: resumen-personal;
+}
+
+.aptitudes{
+    grid-area: aptitudes;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.aptitudes ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experiencia1{
+    grid-area: experiencia1;
+    display: grid;
+    grid-template-columns: 35% 55%;
+    grid-template-rows: 45% 55%;
+    column-gap: 10%;
+    grid-template-areas:
+        "izq-exp lista-exp"
+        "izq-exp lista-exp"
+        "izq-exp lista-exp";
+}
+
+.izq-exp1, .izq-exp2{
+    color: blue;
+    grid-area: izq-exp;
+}
+
+
+.experiencia1 ul{
+    grid-area: lista-exp;
+}
+
+.experiencia2 ul{
+    grid-area: lista-exp;
+}
+
+.experiencia2{
+    grid-area: experiencia2;
+    display: grid;
+    grid-template-columns: 35% 55%;
+    grid-template-rows: 45% 55%;
+    column-gap: 10%;
+    grid-template-areas:
+        "izq-exp lista-exp"
+        "izq-exp lista-exp"
+        "izq-exp lista-exp";
+}
+
+.academico{
+    grid-area: academico;
+}
+
+.academico1{
+    grid-area: academico1;
+}
+
+.academico2{
+    grid-area: academico2;
+}
+
+
+
+/*
+main{    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:    "imagen encabezado"
+                            "imagen fondo-blanco"
+                            "imagen fondo-blanco"
+                            "fondo-azul fondo-blanco"
+                            "fondo-azul fondo-blanco";
+}
+*/
+
+/*
+.fondo-blanco{
+    display: grid;
+    grid-template-columns: 40% 10% 50%;
+    grid-template-rows: 20% 7% 15% 15% 7% 18% 18%;
+    grid-template-areas: 
+        "resumen-personal resumen-personal aptitudes"
+        "laboral laboral laboral"
+        "experiencia1 experiencia1 experiencia1"
+        "experiencia2 experiencia2 experiencia2"
+        "academico academico academico"
+        "academico1 academico1 academico1"
+        "academico2 academico2 academico2";
+}
+*/
